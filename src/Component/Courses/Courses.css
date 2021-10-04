@@ -1,0 +1,11 @@
+.courses-border{
+    border: 2px solid cyan;
+}
+
+.cart{
+    background-color: #67517c;
+    height: 450px;
+    margin: 15px;
+    border: 1px solid gray;
+    color: white;
+}
