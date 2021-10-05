@@ -2,11 +2,15 @@ import React from 'react';
 import './Footer.css'
 
 const Footer = () => {
+
     return (
         <div>
             <div className="text-white bg-dark position-footer">
-                <h1>Footer</h1>
-                <p className="mb-5">Cpyright 2021</p>
+                <h2>You can find us at..</h2>
+                <br />
+                <h1><i className="fab fa-facebook-square"></i> <i className="fab fa-instagram"></i> <i className="fab fa-linkedin"></i> <i className="fab fa-twitter-square"></i></h1>
+                <br />
+                <p>Copyright 2021</p>
             </div>
         </div>
     );

@@ -15,13 +15,19 @@ import Contact from './Component/Contact/Contact';
 
 
 function App() {
+
   return (
+    
     <div className="App">
 
-      {/* use-react-router */}
+      {/* Use-react-router */}
 
       <Router>
+
+        {/*Header-outside-the-route */}
+
         <Header></Header>
+
         <Switch>
           <Route exact path="/home">
             <Home> </Home>
@@ -39,9 +45,11 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+
+        {/* Footer-outside-the-route */}
+
         <Footer></Footer>
       </Router>
-
     </div>
   );
 }

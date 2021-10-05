@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './Courses.css'
 
 const Courses = (props) => {
-    console.log(props.limit);
+
+    //console.log(props.limit);
+
     let limit = props.limit ? props.limit : 0;
     const [courses, setCourses] = useState([]);
     useEffect(() => {
@@ -10,13 +12,15 @@ const Courses = (props) => {
             .then(res => res.json())
             .then(data => setCourses(data));
     }, [])
+
     return (
         <div className="courses-border">
             <div className="row">
                 {
+                    // Using-map-function-to-show-data-in-cart
 
                     courses.map((course, index) => {
-                        return index < (limit > 0 ? limit : courses.length) && (<div className="col-md-3">
+                        return index < (limit > 0 ? limit : courses.length) && (<div className="col-md-3" key={course.id}>
                             <div className="cart mt-5">
                                 <div>
                                     <img className="img-fluid" src={course.img} alt="" />
