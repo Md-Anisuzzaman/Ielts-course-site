@@ -1,11 +1,26 @@
 .courses-border{
-    border: 2px solid cyan;
+    /* border: 2px solid cyan; */
+}
+.row h1{
+    color: white;
 }
 
 .cart{
     background-color: #67517c;
-    height: 450px;
+    /* height: 450px; */
+    height: 350px;
     margin: 15px;
     border: 1px solid gray;
     color: white;
+}
+
+.img-size{
+    /* display:inline-block; */
+    overflow:hidden; 
+}
+
+.p-container{
+    display: flex;
+   justify-content:space-evenly;
+   align-items: center;
 }

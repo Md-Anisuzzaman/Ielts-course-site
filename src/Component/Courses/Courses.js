@@ -16,20 +16,24 @@ const Courses = (props) => {
     return (
         <div className="courses-border">
             <div className="row">
+                <h1>Our Courses</h1>
                 {
                     // Using-map-function-to-show-data-in-cart
 
                     courses.map((course, index) => {
                         return index < (limit > 0 ? limit : courses.length) && (<div className="col-md-3" key={course.id}>
                             <div className="cart mt-5">
-                                <div>
+                                <div className='img-size'>
                                     <img className="img-fluid" src={course.img} alt="" />
                                 </div>
-                                <div className="mt-2">
-                                    <h5>Course: {course.name}</h5>
-                                    <p>Class: {course.class}</p>
-                                    <p>Duration: {course.duration}</p>
-                                    <p><span className="fw-bold">Details:</span> {course.details}</p>
+                                <div className="mt-3">
+                                    <h5>{course.name}</h5>
+                                    <div className='p-container'>
+                                        <p>Duration: {course.duration}</p>
+                                        <p>Class: {course.class}</p>
+                                    </div>
+                                    {/* <p><span className="fw-bold">Details:</span> {course.details}</p> */}
+                                    <button className='btn btn-warning'>Details</button>
                                 </div>
                             </div>
                         </div>)
